@@ -2,22 +2,22 @@
     margin: 0;
     padding: 0;
 }
+body {
+    text-align: center;
+    background-image: url("https://images.pexels.com/photos/1816714/pexels-photo-1816714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
 
 .links {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    position: fixed;
-    top:5px;
+    width: 69vw;
+    display:inline-block;
+    margin: 20px;
 }
 .menu {
     background-color:rgba(233, 227, 227, 0.356);
     border-radius: 10px;
     width: 100%;
-    padding-top: 10px;
-    text-align-last: right;
-    margin: 0 2vw;
-    padding-right: 2vw;
+    padding: 10px 0px;
+    text-align: center;
 }
 .links label {
     background-color: #777;
@@ -42,33 +42,30 @@
     box-shadow: none;
 }
 .bloco {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-content: center;
+    width: 72vw;
+    height: 70vh;
+    display: inline-block;
+    border-radius: 20px;
     text-align: center;
-    background-color: #999;
+    background-color:rgba(100, 100,100, 0.5);
     align-items: center;
+    margin: 5vh auto;
 }
 .bloco h1 {
     color:white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     width: 100%; 
+    margin-top:20px;
 }
-#secao2{
-    background-color: #777;
-}
-#secao3{
-    background-color: #555;
-}
+
 #secao2:checked ~.sections{
-    margin-top: -100vh;
+    margin-top: -80vh;
 }
 #secao3:checked ~.sections{
-    margin-top: -200vh;
+    margin-top: -160vh;
 }
 #secao4:checked ~.sections{
-    margin-top: -300vh;
+    margin-top: -240vh;
 }
 .scroll input {
     display:none;
@@ -80,4 +77,5 @@
 }
 .sections{
     transition: all 1s ease-in-out;
+    text-align: center;
 }
